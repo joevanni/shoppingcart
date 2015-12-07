@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        
+        <title>Gallantic</title>
+        
+    </head>
+	<body onload="Load()">
+       <div id="header">
+       </div>
+      <div id="myFormcontainer">
+   <form action="" method="get">
+    
+    <input type="text" input size="23" id="searchbox" placeholder="Search for a product, category or a brand"/>
+    <input type="submit" value="search" class="search"/></form>
+  </div>
+  
+
+      <div id="slider">
+<div id="imgs">
+   <img id="img1" src="img/picture(sample).jpg"/>
+  <img id="img2" src="img/1.jpg" />
+  <img id="img3" src="img/2.jpg" />
+  </div>
+
+ 
+<div id="snav">
+  <div id="snavup">
+  <div id="circles">
+    <ul>
+    <li id="R0"></li>
+     <li id="R1"></li>
+      <li id="R2"></li>
+     </ul>
+     </div>
+     
+<div id="snavmiddle">
+ 
+<img id="right" src="img/1439620837_rnd_br_next.png" onclick="next()"/>
+<img id="left" src="img/1439620888_rnd_br_prev.png" onclick="prev()" />
+</div>
+</div>
+
+  
+ <div id="snavbottom">
+
+  <p align="center" id="P0"><span style="font-size: 16px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif;">UNIQUE AND SELECTOR ANTIQUE</span><br /><br /><span style="font-size: 14px; font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans', Verdana, sans-serif;">A fine selection of period decorative art with emphasis on french Empire and Neoclassical objects.All items are in original condition.All gilding on Ormolu objects are the Orginal finish and Never re-gilded.</span></p>
+  <p id="P1"></p>
+  <p id="P2"></p>
+</div>
+</div>
+</div>
+        <div id="item"> 
+ <img id="feature" src="img/features.jpg" />
+    <div id="h1"> Featured Item</div>
+  </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/slider.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>
